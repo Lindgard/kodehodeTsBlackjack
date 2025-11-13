@@ -1,7 +1,17 @@
 import React from "react";
 
-const Button = () => {
-  return <div>Button</div>;
+// interface props {
+//   text: string;
+// }
+
+//* create a proper component in TS to use
+
+const Button = ({ text, onClick }) => {
+  return (
+    <>
+      <button onClick={onClick}>{text}</button>
+    </>
+  );
 };
 
 export default Button;
